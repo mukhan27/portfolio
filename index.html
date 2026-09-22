@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammed Khan — Engineering Portfolio</title>
+<meta name="description" content="Engineering portfolio of Muhammed Khan, Harvard SEAS: mechatronics, CAD, finite element analysis, design for manufacturing, and reverse engineering.">
+<meta name="author" content="Muhammed Khan">
+<meta name="theme-color" content="#efebe3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1520" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Muhammed Khan — Engineering Portfolio">
+<meta property="og:description" content="Mechatronics, CAD, FEA, and design for manufacturing. Selected work from Harvard SEAS and the IgNYte Lab at NYU.">
+<meta property="og:image" content="assets/es51-robot.jpg">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%23efebe3'/><path d='M5 27V5h4l7 12 7-12h4v22h-4V13l-7 12-7-12v14z' fill='%23b0331c'/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<a class="skip" href="#work">Skip to work</a>
+<div class="grain" aria-hidden="true"></div>
+
+<div class="frame" aria-hidden="true">
+  <b data-side="l" style="top:20%">D</b><b data-side="l" style="top:45%">C</b>
+  <b data-side="l" style="top:70%">B</b><b data-side="l" style="top:92%">A</b>
+  <b data-side="r" style="top:20%">D</b><b data-side="r" style="top:45%">C</b>
+  <b data-side="r" style="top:70%">B</b><b data-side="r" style="top:92%">A</b>
+  <b data-side="t" style="left:20%">4</b><b data-side="t" style="left:45%">3</b>
+  <b data-side="t" style="left:70%">2</b><b data-side="t" style="left:92%">1</b>
+  <b data-side="b" style="left:20%">4</b><b data-side="b" style="left:45%">3</b>
+  <b data-side="b" style="left:70%">2</b><b data-side="b" style="left:92%">1</b>
+</div>
+
+<!-- ======================================================== MASTHEAD ==== -->
+<header class="masthead">
+  <div class="wrap masthead__in">
+    <a class="mark" href="#top">M<span>.</span>Khan</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#coursework">Coursework</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="toggle" id="theme" type="button" aria-live="polite">
+      <i aria-hidden="true"></i><span id="theme-label">Blueprint</span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================================================ HERO ==== -->
+<section class="hero">
+  <div class="wrap hero__grid">
+
+    <div>
+      <p class="mono" data-reveal style="--d:60ms">Engineering Portfolio &nbsp;·&nbsp; Rev. 2026.09</p>
+
+      <h1 class="hero__name" data-reveal style="--d:140ms">
+        Muhammed<em>Khan</em>
+      </h1>
+
+      <p class="mono hero__meta" data-reveal style="--d:220ms">
+        <span>Harvard University</span><span class="tick">/</span>
+        <span>Engineering Sciences</span><span class="tick">/</span>
+        <span>Cambridge, MA</span>
+      </p>
+
+      <hr class="rule" data-reveal style="--d:280ms; margin:1.9rem 0">
+
+      <p class="lede" data-reveal style="--d:340ms">
+        I like problems that end in a physical object — a robot that has to climb a ramp
+        by Thursday, a checkerboard that has to know where its own pieces are, a tumbler
+        that has to be taken apart before it can be understood.
+      </p>
+
+      <p data-reveal style="--d:400ms; margin-top:1.3rem; color:var(--ink-2)">
+        What follows is mostly coursework from Harvard SEAS, plus a summer of sensor-hardware
+        research at NYU. It is presented the way the reports were written: with the
+        calculations that turned out to be wrong still attached, because those are usually
+        the parts worth reading.
+      </p>
+
+      <div class="hero__links" data-reveal style="--d:460ms">
+        <a class="btn btn--solid" href="#work"><i aria-hidden="true">↓</i>Selected work</a>
+        <a class="btn" href="mailto:muhammedkhan@college.harvard.edu"><i aria-hidden="true">✉</i>Email</a>
+        <a class="btn" href="https://github.com/mkhan-harvard" target="_blank" rel="noopener"><i aria-hidden="true">↗</i>GitHub</a>
+      </div>
+    </div>
+
+    <div class="portrait" data-reveal style="--d:520ms">
+      <div class="portrait__plate">
+        <img src="assets/muhammed-khan.jpg" width="400" height="400"
+             alt="Portrait of Muhammed Khan">
+      </div>
+      <p class="mono portrait__cap">Fig. 00 — the engineer</p>
+
+      <dl class="titleblock">
+        <div><dt>Drawn by</dt><dd>M. Khan</dd></div>
+        <div><dt>Sheet</dt><dd>1 of 6</dd></div>
+        <div><dt>Institution</dt><dd>Harvard SEAS</dd></div>
+        <div><dt>Discipline</dt><dd>Mech / Elec</dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:muhammedkhan@college.harvard.edu">muhammedkhan@<wbr>college.harvard.edu</a></dd></div>
+        <div><dt>GitHub</dt><dd><a href="https://github.com/mkhan-harvard" target="_blank" rel="noopener">mkhan-harvard</a></dd></div>
+      </dl>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================ WORK ==== -->
+<section class="section" id="work">
+  <div class="wrap">
+
+    <div class="shead">
+      <h2 data-reveal>Selected Work</h2>
+      <hr class="rule" data-reveal style="--d:120ms">
+      <p class="mono" data-reveal style="--d:200ms">05 Sheets</p>
+    </div>
+
+    <!-- ---------------------------------------------------------- 01 --- -->
+    <article class="sheet" id="p-reverse">
+      <div class="sheet__rail" data-reveal>
+        <span class="sheet__no">01</span>
+        <hr class="rule">
+        <span class="mono">Sept 2026<br>Teardown</span>
+      </div>
+
+      <div>
+        <p class="mono sheet__tags" data-reveal>
+          <span class="course">ES 55 · Design &amp; Manufacturing</span><span class="tick">/</span>
+          <span>Reverse engineering</span><span class="tick">/</span>
+          <span>With Davu</span>
+        </p>
+
+        <h3 class="sheet__title" data-reveal style="--d:80ms">Costing a World Cup Tumbler From the Factory Floor Up</h3>
+
+        <p class="lede" data-reveal style="--d:140ms">
+          A licensed FIFA 2026 “Rowdy Cup” — a 700&nbsp;mL stainless tumbler with a whistle
+          built into its base — taken apart, modelled, and costed part by part.
+        </p>
+
+        <div class="prose" data-reveal style="--d:200ms">
+          <h4>Teardown and reconstruction</h4>
+          <p>
+            We disassembled the cup down to eighteen line items: a 0.4&nbsp;mm formed
+            stainless sleeve, a food-grade PP inner vessel with an integral straw channel,
+            a bonded bottom hub carrying the sound hole and the whistle threads, a slotted
+            base cap, a 3.3&nbsp;g silicone acoustic diaphragm, an SAN lid with a slider,
+            two gaskets, an extruded straw, a heat-transfer graphic, and the packaging.
+          </p>
+          <p>
+            We had no scale. So the measuring instrument became a SolidWorks model —
+            rebuilding each part from calipers and photographs, then reading volumes off
+            the CAD and multiplying by material density to get masses. Those masses,
+            against 2026 resin, silicone, steel and corrugated prices, gave the material
+            column of the bill of materials.
+          </p>
+
+          <h4>Process sheet and labour</h4>
+          <p>
+            Twenty-four steps, from stamping the steel blank through roll-forming, seam
+            welding, tapering, coating, heat-transfer graphics, six injection-moulding
+            operations, assembly and packing. Each step was assigned a labour time and
+            burdened at a real $4.50/hr Chinese rate, then re-run at a hypothetical
+            $46/hr US rate to see what the rate alone was worth.
+          </p>
+
+          <h4>What the numbers said</h4>
+          <ul>
+            <li><strong>LBM came to $1.73 per unit</strong> at the China rate — $1.35 material, $0.38 labour and burden. The identical process sheet costs $5.19 at the US rate.</li>
+            <li><strong>Labour rate outweighs the bill of materials.</strong> Labour is 22% of the real total and 74% of the hypothetical one. Which country builds it matters more than any single part on the BOM.</li>
+            <li><strong>The FIFA royalty (~$1.80/unit) costs more than every material combined ($1.35).</strong> On licensed merchandise, the licence is the expensive component.</li>
+            <li><strong>Our first-pass estimate of $8.00 was wrong in an instructive way.</strong> We had reasoned it backwards from a $12.97 clearance price, which lands near the licensee’s landed cost, not the factory’s manufacturing cost. The gap between them is tooling amortisation, overhead, freight and the royalty.</li>
+          </ul>
+
+          <h4>What the parts admitted</h4>
+          <p>
+            The base cap’s moulded text reads <em>ZHC Corp. Canada</em> and <em>23&nbsp;oz</em>;
+            the carton says Rowdy Cup and 24&nbsp;oz. This is a licensed graphic wrap on an
+            existing product, not a clean-sheet design. Elsewhere, squeezed-out adhesive
+            visible at the bottom joint told us the green shell is glued to the black hub
+            rather than moulded as one piece or snap-fit — a detail that changed both the
+            process sheet and one of our DFM recommendations.
+          </p>
+
+          <h4>Design for manufacturing</h4>
+          <ul>
+            <li>Specify pre-coated steel coil and delete the clean–coat–cure sequence entirely.</li>
+            <li>Family-tool the four small plastic parts (slider, base cap, diaphragm, gasket). No unit-cost change, but roughly $20–30k less tooling capital — worth a great deal on a product with one tournament of shelf life.</li>
+            <li>Crimp the hub into the shell instead of bonding it, removing the adhesive line and its cure time.</li>
+          </ul>
+
+          <div class="note">
+            <b>Method note</b>
+            We used Claude to read the fine moulded text off the teardown photographs and
+            to research current resin, silicone and stainless pricing. The disassembly, the
+            CAD, the process sheet and every costing judgement are ours.
+          </div>
+        </div>
+
+        <dl class="specs" data-reveal>
+          <div><dt>Parts identified</dt><dd>18</dd></div>
+          <div><dt>Material cost</dt><dd>$1.35</dd></div>
+          <div><dt>Labour + burden</dt><dd>$0.38</dd></div>
+          <div><dt>Total LBM</dt><dd>$1.73 / unit</dd></div>
+          <div><dt>Same sheet, US rate</dt><dd>$5.19 / unit</dd></div>
+          <div><dt>Retail</dt><dd>$29.99</dd></div>
+        </dl>
+
+        <div class="figs" data-reveal>
+          <figure>
+            <button class="fig" type="button" data-full="assets/re-product.jpg" data-cap="The Rowdy Cup before disassembly — 24 oz, stainless sleeve over a plastic liner.">
+              <img src="assets/re-product.jpg" loading="lazy" width="1100" height="825" alt="Green FIFA World Cup 2026 Rowdy Cup tumbler held before teardown">
+            </button>
+            <figcaption><b>1.1</b> Subject, as purchased</figcaption>
+          </figure>
+          <figure>
+            <button class="fig fig--tall fig--plot" type="button" data-full="assets/re-cad.jpg" data-cap="SolidWorks reconstruction — the model was our measuring instrument for part volumes.">
+              <img src="assets/re-cad.jpg" loading="lazy" width="454" height="628" alt="SolidWorks render of the assembled Rowdy Cup">
+            </button>
+            <figcaption><b>1.2</b> CAD reconstruction</figcaption>
+          </figure>
+          <figure>
+            <button class="fig fig--plot" type="button" data-full="assets/re-exploded.jpg" data-cap="Exploded assembly: lid, slider, gaskets, straw, inner vessel, steel sleeve, hub, diaphragm, base cap.">
+              <img src="assets/re-exploded.jpg" loading="lazy" width="520" height="490" alt="Exploded SolidWorks view of the Rowdy Cup assembly">
+            </button>
+            <figcaption><b>1.3</b> Exploded assembly</figcaption>
+          </figure>
+          <figure>
+            <button class="fig" type="button" data-full="assets/re-whistle.jpg" data-cap="Slotted whistle base cap and the 3.3 g silicone diaphragm that vibrates behind it.">
+              <img src="assets/re-whistle.jpg" loading="lazy" width="1100" height="825" alt="Whistle base cap with slotted grille beside the silicone acoustic diaphragm">
+            </button>
+            <figcaption><b>1.4</b> Horn: cap + diaphragm</figcaption>
+          </figure>
+          <figure>
+            <button class="fig" type="button" data-full="assets/re-hub.jpg" data-cap="The bonded bottom hub. Adhesive squeeze-out at this joint is how we knew the shell is glued, not moulded in one piece.">
+              <img src="assets/re-hub.jpg" loading="lazy" width="1100" height="825" alt="Black bottom hub bonded inside the green steel shell">
+            </button>
+            <figcaption><b>1.5</b> Bonded hub joint</figcaption>
+          </figure>
+          <figure>
+            <button class="fig" type="button" data-full="assets/re-packaging.jpg" data-cap="Retail carton, die-cut insert and holographic security label — three more lines on the bill of materials.">
+              <img src="assets/re-packaging.jpg" loading="lazy" width="1100" height="825" alt="Flattened retail carton for the Rowdy Cup showing printed panels">
+            </button>
+            <figcaption><b>1.6</b> Packaging</figcaption>
+          </figure>
+          <figure>
+            <button class="fig" type="button" data-full="assets/re-lid.jpg" data-cap="SAN lid, slider and silicone sealing ring.">
+              <img src="assets/re-lid.jpg" loading="lazy" width="1100" height="825" alt="Smoke-tinted lid beside its silicone sealing gasket">
+            </button>
+            <figcaption><b>1.7</b> Lid and gasket</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------------------------------------------------------- 02 --- -->
+    <article class="sheet" id="p-comsol">
+      <div class="sheet__rail" data-reveal>
+        <span class="sheet__no">02</span>
+        <hr class="rule">
+        <span class="mono">Apr 2026<br>Solo</span>
+      </div>
+
+      <div>
+        <p class="mono sheet__tags" data-reveal>
+          <span class="course">ES 120 · Mechanics of Solids</span><span class="tick">/</span>
+          <span>Finite element analysis</span><span class="tick">/</span>
+          <span>COMSOL</span>
+        </p>
+
+        <h3 class="sheet__title" data-reveal style="--d:80ms">Finding Where Two Textbook Assumptions Stop Being True</h3>
+
+        <p class="lede" data-reveal style="--d:140ms">
+          ES 120 hands you a linear theory and a promise that σ&nbsp;=&nbsp;P/A works
+          “far enough” from the load. I built the simulations to find the edges of both
+          claims and put numbers on them.
+        </p>
+
+        <div class="prose" data-reveal style="--d:200ms">
+          <h4>Setup</h4>
+          <p>
+            A standard ASTM E8 round tensile specimen — 145&nbsp;mm long, 50&nbsp;mm gauge,
+            12.5&nbsp;mm gauge diameter, 20&nbsp;mm grips, 10&nbsp;mm fillets — in A36
+            steel, fixed at the lower face and loaded axially on a tetrahedral mesh.
+          </p>
+          <p>
+            Before trusting anything, I checked the model against an ES 120 hand calculation
+            at 200&nbsp;MPa: both gave 512&nbsp;MPa in the gauge. Tip displacement came to
+            0.232&nbsp;mm by hand against 0.250&nbsp;mm in COMSOL — the difference is fillet
+            compliance, which the three-cylinder formula cannot see. A five-level mesh study
+            from ~1,500 to ~41,000 elements moved the answer by 0.084%, so the discrepancy
+            was physics, not discretisation.
+          </p>
+
+          <h4>Assumption I — linearising elasticity</h4>
+          <p>
+            I swept applied stress across eight log-spaced values, from
+            ε&nbsp;=&nbsp;10⁻⁴ to 0.3, running each one with geometric nonlinearity on and
+            off, and compared tip displacement.
+          </p>
+          <ul>
+            <li>Linear theory tracks the full nonlinear result to within <strong>1% up to ε ≈ 3.2 × 10⁻³</strong>, and within 5% to ε ≈ 1.4 × 10⁻².</li>
+            <li>Steel structures are designed below ε ≈ 10⁻³ to stay clear of yield, so the linear theory carries roughly an order of magnitude of strain margin in any realistic application.</li>
+            <li>It only fails meaningfully past a few percent strain — well beyond where the steel itself stopped behaving elastically. At ε = 0.1 the two disagree by over 300%; at ε = 0.3 the nonlinear solver finds no stable equilibrium at all.</li>
+          </ul>
+
+          <h4>Assumption II — Saint-Venant and idealised stress</h4>
+          <p>
+            Three statically equivalent loadings, each delivering the same 62.83&nbsp;kN to
+            the end face: a uniform traction (the textbook idealisation), a centred point
+            load at a single vertex, and an outer-ring traction standing in for grip jaws.
+            On nine cross-sections along the bar I measured a dimensionless non-uniformity,
+            η = σ<sub>std</sub>/|σ<sub>avg</sub>|, which is zero for a perfectly uniform
+            distribution.
+          </p>
+          <ul>
+            <li>Point and ring loads start at <strong>η ≈ 21%</strong> at the loaded face and decay to a few percent <strong>within about one grip diameter</strong>. The uniform load sits near the ~4% noise floor throughout.</li>
+            <li>By the gauge centre the three are essentially indistinguishable. That is Saint-Venant’s principle, measured rather than asserted — and it is why σ = P/A is legitimate in the gauge of a real tensile test with real grips.</li>
+            <li><strong>The caveat I did not expect:</strong> the cross-section inside the fillet shows η ≈ 33% for <em>all three</em> loadings. Because it is identical regardless of how the bar is loaded, it is not a Saint-Venant effect at all — it is an ordinary stress concentration at a change in section. I excluded those stations from the decay analysis; they need a stress-concentration-factor treatment instead.</li>
+          </ul>
+
+          <h4>Conclusion</h4>
+          <p>
+            Both assumptions hold comfortably in the regime where ES 120 actually applies
+            them. The full nonlinear three-dimensional theory adds nothing of practical
+            value to a steel tensile specimen — except as a way of locating exactly where
+            the simple theory gives out: at fillets, near loads, and past the elastic limit.
+          </p>
+        </div>
+
+        <dl class="specs" data-reveal>
+          <div><dt>Solver</dt><dd>COMSOL Multiphysics</dd></div>
+          <div><dt>Mesh used</dt><dd>13,923 el. (Fine)</dd></div>
+          <div><dt>Mesh sensitivity</dt><dd>0.084%</dd></div>
+          <div><dt>Linear valid to</dt><dd>ε ~ 3.2 × 10⁻³</dd></div>
+          <div><dt>Saint-Venant length</dt><dd>~1 grip dia.</dd></div>
+          <div><dt>Gauge stress</dt><dd>512 MPa</dd></div>
+        </dl>
+
+        <div class="figs figs--wide" data-reveal>
+          <figure>
+            <button class="fig fig--plot" type="button" data-full="assets/es120-vonmises.jpg" data-cap="Von Mises stress at the reference load: 512 MPa in the gauge, 200 MPa in the grips, peaking at 578 MPa in the fillets.">
+              <img src="assets/es120-vonmises.jpg" loading="lazy" width="858" height="697" alt="COMSOL von Mises stress plot of the tensile specimen under uniform load">
+            </button>
+            <figcaption><b>2.1</b> Von Mises, uniform traction</figcaption>
+          </figure>
+          <figure>
+            <button class="fig fig--plot" type="button" data-full="assets/es120-linearity.jpg" data-cap="Disagreement between linear and nonlinear solutions against strain, with the 1%, 5% and 10% thresholds marked.">
+              <img src="assets/es120-linearity.jpg" loading="lazy" width="1100" height="752" alt="Log-log plot of linear versus nonlinear disagreement against applied strain">
+            </button>
+            <figcaption><b>2.2</b> Where linearisation fails</figcaption>
+          </figure>
+          <figure>
+            <button class="fig fig--plot" type="button" data-full="assets/es120-saintvenant.jpg" data-cap="Cross-sectional non-uniformity against distance from the loaded face for all three loadings. The dotted line marks one grip diameter.">
+              <img src="assets/es120-saintvenant.jpg" loading="lazy" width="1200" height="818" alt="Plot of stress non-uniformity decaying with distance from the loaded end face">
+            </button>
+            <figcaption><b>2.3</b> Saint-Venant decay</figcaption>
+          </figure>
+          <figure>
+            <button class="fig fig--plot" type="button" data-full="assets/es120-meanstress.jpg" data-cap="Mean axial stress along the bar. Uniform and point loadings hit the ES 120 predictions in both the gauge and the grip.">
+              <img src="assets/es120-meanstress.jpg" loading="lazy" width="1100" height="702" alt="Mean cross-sectional stress plotted along the length of the specimen">
+            </button>
+            <figcaption><b>2.4</b> Mean stress vs. theory</figcaption>
+          </figure>
+          <figure>
+            <button class="fig fig--plot" type="button" data-full="assets/es120-load-point.jpg" data-cap="Centred point load: an extreme local stress at one node, from applying a finite force at a single mesh vertex.">
+              <img src="assets/es120-load-point.jpg" loading="lazy" width="788" height="570" alt="COMSOL stress plot for the centred point load case">
+            </button>
+            <figcaption><b>2.5</b> Point loading</figcaption>
+          </figure>
+          <figure>
+            <button class="fig fig--plot" type="button" data-full="assets/es120-load-ring.jpg" data-cap="Outer-ring traction: a bullseye of stress on the rim, standing in for grip-jaw loading.">
+              <img src="assets/es120-load-ring.jpg" loading="lazy" width="832" height="627" alt="COMSOL stress plot for the outer-ring traction case">
+            </button>
+            <figcaption><b>2.6</b> Ring loading</figcaption>
+          </figure>
+        </div>
+
+        <div class="sheet__links" data-reveal>
+          <a class="btn" href="docs/ES120-COMSOL-Assumptions-Study.pdf" target="_blank" rel="noopener"><i aria-hidden="true">↗</i>Full report (PDF)</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------------------------------------------------------- 03 --- -->
+    <article class="sheet" id="p-ignyte">
+      <div class="sheet__rail" data-reveal>
+        <span class="sheet__no">03</span>
+        <hr class="rule">
+        <span class="mono">Summer 2025<br>Research</span>
+      </div>
+
+      <div>
+        <p class="mono sheet__tags" data-reveal>
+          <span class="course">IgNYte Lab · NYU</span><span class="tick">/</span>
+          <span>Enclosure design</span><span class="tick">/</span>
+          <span>Embedded telemetry</span>
+        </p>
+
+        <h3 class="sheet__title" data-reveal style="--d:80ms">A Sensor Built To Be Left On A Roof</h3>
+
+        <p class="lede" data-reveal style="--d:140ms">
+          Street-level monitors miss what the air does at rooftop height — where buildings
+          draw their intake. I worked on the enclosure and the data path for a low-cost
+          NO₂, O₃ and PM sensor designed to be deployed across New York City rooftops and
+          then left alone.
+        </p>
+
+        <div class="prose" data-reveal style="--d:200ms">
+          <h4>The gap</h4>
+          <p>
+            NYC air quality is well instrumented at street level and barely instrumented
+            at the altitude where air handling units actually sit. PM2.5 in the city has
+            reached 117&nbsp;µg/m³ during wildfire smoke events — eight times the WHO
+            guideline — and rooftop behaviour of NO₂, O₃ and particulate matter is largely
+            unmeasured. The lab’s aim is to fill that gap with sensors cheap enough to
+            deploy in quantity.
+          </p>
+
+          <h4>Learning from what already exists</h4>
+          <p>
+            I surveyed four commercial monitors — IQAir, Aeroqual, the Air Quality Egg and
+            Airly — for what to borrow and what to avoid. The recurring good ideas were
+            open bottoms for passive airflow and a roof for weather protection. The
+            recurring problems were disqualifying for our use: mains power, housings sized
+            for far more sensors than we needed, and mounts with height limits.
+          </p>
+
+          <h4>Enclosure</h4>
+          <p>
+            An open-bottom housing with a pitched roof carrying a solar panel, a nylon
+            outer shell over a cheaper plastic interior, a dedicated shelf for the battery,
+            a separate NO₂/O₃ sensor block hanging below the main body where it sees
+            outside air directly, and a pipe-clamp mount that grips railings and stanchions
+            rather than needing a prepared surface.
+          </p>
+
+          <h4>Fixing the data path</h4>
+          <p>
+            The original telemetry chain was LoRa: sensor&nbsp;→&nbsp;gateway&nbsp;→&nbsp;database.
+            It kept failing, on range and on gateway faults, and a rooftop is the worst
+            possible place to debug an intermediate box. We replaced it with a SIM7028
+            cellular module writing directly to Firebase — sensor&nbsp;→&nbsp;SIM&nbsp;→&nbsp;Firebase.
+            One fewer thing on the roof that can go wrong.
+          </p>
+
+          <h4>Next</h4>
+          <p>
+            Manufacture the PCB, deploy a unit on a roof, and revise from what the
+            deployment breaks — a 3D-printed attachment system with cable ties spaced
+            further from centre, a modified sensor block that drops the front screw, and
+            screw protection at the rear.
+          </p>
+        </div>
+
+        <dl class="specs" data-reveal>
+          <div><dt>Organisation</dt><dd>IgNYte Lab, NYU</dd></div>
+          <div><dt>Measures</dt><dd>NO₂ · O₃ · PM · T · RH</dd></div>
+          <div><dt>Power</dt><dd>Solar + battery</dd></div>
+          <div><dt>Telemetry</dt><dd>SIM7028 → Firebase</dd></div>
+          <div><dt>Shell</dt><dd>Nylon over plastic</dd></div>
+          <div><dt>My role</dt><dd>Enclosure, data path</dd></div>
+        </dl>
+
+        <div class="figs figs--wide" data-reveal>
+          <figure>
+            <button class="fig fig--free" type="button" data-full="assets/ignyte-cad.jpg" data-cap="Exploded CAD: solar panel, nylon cover, battery shelf, PCB, sensor box, and the NO2/O3 sensor holder below.">
+              <img src="assets/ignyte-cad.jpg" loading="lazy" width="696" height="571" alt="Annotated exploded CAD view of the air quality sensor enclosure">
+            </button>
+            <figcaption><b>3.1</b> Exploded enclosure</figcaption>
+          </figure>
+          <figure>
+            <button class="fig fig--free" type="button" data-full="assets/ignyte-enclosure.jpg" data-cap="Built prototype: solar roof, pipe-clamp mount, and the interior with the battery and board in place.">
+              <img src="assets/ignyte-enclosure.jpg" loading="lazy" width="1246" height="492" alt="Three views of the fabricated sensor enclosure: solar roof, clamp mount, and interior">
+            </button>
+            <figcaption><b>3.2</b> Prototype, three views</figcaption>
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------------------------------------------------------- 04 --- -->
+    <article class="sheet" id="p-checkers">
+      <div class="sheet__rail" data-reveal>
+        <span class="sheet__no">04</span>
+        <hr class="rule">
+        <span class="mono">May 2025<br>Pair</span>
+      </div>
+
+      <div>
+        <p class="mono sheet__tags" data-reveal>
+          <span class="course">ES 50 · Electrical Engineering</span><span class="tick">/</span>
+          <span>Mechatronics</span><span class="tick">/</span>
+          <span>With Federico Garcia Alzate</span>
+        </p>
+
+        <h3 class="sheet__title" data-reveal style="--d:80ms">A Checkerboard That Knows Where Its Pieces Are</h3>
+
+        <p class="lede" data-reveal style="--d:140ms">
+          Thirty-two Hall effect sensors under the dark squares, eight shift registers to
+          get them into an Arduino that does not have thirty-two spare pins, and a 16×16
+          LED matrix mirroring the board in real time.
+        </p>
+
+        <div class="prose" data-reveal style="--d:200ms">
+          <h4>Sensing</h4>
+          <p>
+            A DRV5032DU digital Hall sensor sits under each of the 32 dark squares, soldered
+            to insulated leads and fixed to the underside of the board. Each checker carries
+            a neodymium disc in its base; when a piece lands, the sensor below it goes LOW.
+            Presence becomes a clean binary signal with no thresholding to tune.
+          </p>
+
+          <h4>Getting 32 inputs into an Arduino Uno</h4>
+          <p>
+            Eight SN74HC165N parallel-in / serial-out shift registers, one per rank, four
+            active bits each. We deliberately did <em>not</em> daisy-chain them: every
+            register’s Q<sub>H</sub> goes to its own digital pin, 13 down to 6, off a shared
+            clock and latch. Chaining would have saved pins, but keeping the ranks
+            independent meant a misbehaving row could be isolated and read on its own —
+            which, with 32 hand-soldered sensors under a board, was worth every pin it cost.
+          </p>
+
+          <h4>Mapping board to matrix</h4>
+          <p>
+            The matrix is wired serpentine, and its origin sits at the bottom-left of our
+            board rather than the top-left of the coordinate system. So a
+            <code>shiftToXY[8][8][2]</code> lookup carries every (rank, bit) pair to its LED
+            coordinates, with white squares marked <code>{-1,-1}</code> and skipped, and an
+            <code>XY()</code> function folds that into the right NeoPixel index. Each square
+            renders as a 2×2 block: green when occupied, yellow when empty.
+          </p>
+
+          <h4>Structure</h4>
+          <p>
+            Four corner legs lift the board, two side legs tie its halves together, and a
+            platform hides the wiring while holding the LED matrix in register beneath the
+            squares it represents — all designed in SolidWorks and printed in PLA. Assembled,
+            none of the electronics are visible.
+          </p>
+
+          <h4>What we did not finish, and why</h4>
+          <ul>
+            <li><strong>Move suggestion.</strong> Two buttons were wired and the software was scaffolded to scan the board array for legal diagonals and light the targets in a third colour. The logic did not land before the deadline. We chose stable real-time tracking over a half-working feature.</li>
+            <li><strong>Digital sensors can only answer “magnet or not.”</strong> They cannot distinguish red from black, or a king from a man. Analog Hall sensors with graded magnet strengths would fix both at once — the single change that would most improve a second version.</li>
+            <li><strong>Power.</strong> Two 4.5&nbsp;V packs through an SPDT switch, with brightness capped at 10/255. A 256-pixel WS2812B matrix at full brightness needs a real 5&nbsp;V supply, not batteries in parallel.</li>
+          </ul>
+        </div>
+
+        <div class="schematic" data-reveal>
+          <svg viewBox="0 0 900 150" role="img" aria-label="Signal chain: magnets in pieces, to Hall sensors, to shift registers, to Arduino, to LED matrix">
+            <!-- stage 1 -->
+            <rect class="s-box" x="6" y="36" width="140" height="58"></rect>
+            <text class="s-label" x="20" y="60">Piece magnet</text>
+            <text class="s-sub" x="20" y="76">Neodymium disc</text>
+            <text class="s-tag" x="20" y="112">×32</text>
+            <!-- arrow -->
+            <path class="s-line" d="M146 65 H182"></path><path class="s-accent" d="M176 61 l7 4 -7 4"></path>
+            <!-- stage 2 -->
+            <rect class="s-box" x="183" y="36" width="150" height="58"></rect>
+            <text class="s-label" x="197" y="60">Hall sensor</text>
+            <text class="s-sub" x="197" y="76">DRV5032DU · LOW</text>
+            <text class="s-tag" x="197" y="112">×32</text>
+            <path class="s-line" d="M333 65 H369"></path><path class="s-accent" d="M363 61 l7 4 -7 4"></path>
+            <!-- stage 3 -->
+            <rect class="s-box" x="370" y="36" width="158" height="58"></rect>
+            <text class="s-label" x="384" y="60">Shift register</text>
+            <text class="s-sub" x="384" y="76">SN74HC165N · 4 bits</text>
+            <text class="s-tag" x="384" y="112">×8 · not chained</text>
+            <path class="s-line" d="M528 65 H564"></path><path class="s-accent" d="M558 61 l7 4 -7 4"></path>
+            <!-- stage 4 -->
+            <rect class="s-box" x="565" y="36" width="150" height="58"></rect>
+            <text class="s-label" x="579" y="60">Arduino Uno</text>
+            <text class="s-sub" x="579" y="76">shiftIn() · pins 13-6</text>
+            <text class="s-tag" x="579" y="112">shiftToXY[ ][ ]</text>
+            <path class="s-line" d="M715 65 H751"></path><path class="s-accent" d="M745 61 l7 4 -7 4"></path>
+            <!-- stage 5 -->
+            <rect class="s-box" x="752" y="36" width="142" height="58"></rect>
+            <text class="s-label" x="766" y="60">LED matrix</text>
+            <text class="s-sub" x="766" y="76">16×16 WS2812B</text>
+            <text class="s-tag" x="766" y="112">2×2 per square</text>
+            <!-- baseline -->
+            <path class="s-line" d="M6 128 H894" stroke-dasharray="2 4"></path>
+            <text class="s-sub" x="6" y="20">Signal chain — sheet 04</text>
+          </svg>
+        </div>
+
+        <dl class="specs" data-reveal>
+          <div><dt>Sensors</dt><dd>32 × DRV5032DU</dd></div>
+          <div><dt>Multiplexing</dt><dd>8 × SN74HC165N</dd></div>
+          <div><dt>Controller</dt><dd>Arduino Uno R3</dd></div>
+          <div><dt>Display</dt><dd>16×16 WS2812B</dd></div>
+          <div><dt>Firmware</dt><dd>C++ · FastLED</dd></div>
+          <div><dt>Structure</dt><dd>SolidWorks · PLA</dd></div>
+        </dl>
+
+        <figure class="listing" data-reveal>
+          <pre><code><span class="c">// Each (rank, bit) carries the LED coordinates of that square.</span>
+<span class="c">// White squares are {-1, -1} and get skipped.</span>
+<span class="k">const int</span> shiftToXY[<span class="n">8</span>][<span class="n">8</span>][<span class="n">2</span>] = {
+  <span class="c">// Row 1 (pin 13, Y = 14)</span>
+  {{3, 14}, {-1, -1}, {7, 14}, {-1, -1}, {11, 14}, {-1, -1}, {15, 14}, {-1, -1}},
+  <span class="c">// Row 2 (pin 12, Y = 13)</span>
+  {{1, 12}, {-1, -1}, {5, 12}, {-1, -1}, { 9, 12}, {-1, -1}, {13, 12}, {-1, -1}},
+  <span class="c">// ... six more ranks</span>
+};
+
+<span class="c">// Serpentine mapping for a 16x16 matrix</span>
+<span class="k">uint16_t</span> XY(<span class="k">uint8_t</span> x, <span class="k">uint8_t</span> y) {
+  <span class="k">uint8_t</span> px = y;
+  <span class="k">uint8_t</span> py = MATRIX_WIDTH - <span class="n">1</span> - x;  <span class="c">// Flip X-axis to make (0,0) bottom-left</span>
+
+  <span class="k">if</span> (py % <span class="n">2</span> == <span class="n">0</span>) {
+    <span class="k">return</span> py * MATRIX_HEIGHT + px;
+  } <span class="k">else</span> {
+    <span class="k">return</span> py * MATRIX_HEIGHT + (MATRIX_HEIGHT - <span class="n">1</span> - px);
+  }
+}</code></pre>
+          <figcaption><b>4.1</b> checkers.ino &mdash; board-to-matrix mapping</figcaption>
+        </figure>
+
+        <div class="sheet__links" data-reveal>
+          <a class="btn" href="https://github.com/mkhan-harvard/LEDCheckers" target="_blank" rel="noopener"><i aria-hidden="true">↗</i>Source on GitHub</a>
+          <a class="btn" href="docs/ES50-LED-Checkers-Report.pdf" target="_blank" rel="noopener"><i aria-hidden="true">↗</i>Full report (PDF)</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------------------------------------------------------- 05 --- -->
+    <article class="sheet" id="p-walrus">
+      <div class="sheet__rail" data-reveal>
+        <span class="sheet__no">05</span>
+        <hr class="rule">
+        <span class="mono">Fall 2024<br>Team of 5</span>
+      </div>
+
+      <div>
+        <p class="mono sheet__tags" data-reveal>
+          <span class="course">ES 51 · Computer-Aided Machine Design</span><span class="tick">/</span>
+          <span>Machining &amp; CAD</span><span class="tick">/</span>
+          <span>Team 3</span>
+        </p>
+
+        <h3 class="sheet__title" data-reveal style="--d:80ms">The Wandering Walruses</h3>
+
+        <p class="lede" data-reveal style="--d:140ms">
+          A five-pound competition robot built from stock inside an eleven-inch cube:
+          turned shafts, a milled wax mould, cast silicone wheels, a belt-lifted arm and a
+          printed claw. It scored eleven points and never made the ramp it was built for.
+        </p>
+
+        <div class="prose" data-reveal style="--d:200ms">
+          <h4>The brief</h4>
+          <p>
+            Collect hockey pucks, dog toys and ping-pong balls; deposit them in raised bins;
+            climb a 15° ramp; pass under an 8.5-inch bridge; and fit inside the 11×11×11-inch
+            “Box of Justice” at impound. Materials were capped at three sheets of ¼-inch
+            acrylic and one of ⅛-inch.
+          </p>
+
+          <h4>Choosing a concept</h4>
+          <p>
+            Four concepts went through cardboard prototypes and a Pugh matrix. A
+            drivetrain-only robot for the 30° centre ramp would have tested nothing. A
+            forklift needed a vertical support taller than the bridge clearance would allow.
+            Treads were disproportionate effort for one-point ping-pong balls. Arm and claw
+            won, and the cardboard mock-up immediately showed we needed a cutout in the
+            front of the baseplate for the arm to reach the floor.
+          </p>
+
+          <h4>Building it</h4>
+          <ul>
+            <li>I built a gearbox and motor configuration as an individual project; two of those went into the final drivetrain.</li>
+            <li>Shafts turned on the lathe; the 1×1-inch aluminium arm tower cut on the horizontal bandsaw and drill-pressed for bushings; base and side plates laser-cut and joined with T-slots.</li>
+            <li>The arm rides a 15-inch belt over a 64-tooth printed pulley. SolidWorks placed the tower and motor so the belt length came out exactly right — which made it a fight to fit, and made the tensioner we had designed unnecessary.</li>
+            <li>Printed PLA claw with 32-tooth acetal gears and a servo. PLA alone slipped on the pucks, so we milled a wax mould on the CNC and cast Ecoflex-50 silicone inserts to raise the friction. The four drive wheels are cast the same way.</li>
+            <li>Roughly a dozen cardboard baseplate iterations before the acrylic ones, because out-of-tolerance gearbox parts kept refusing to match the CAD.</li>
+          </ul>
+
+          <h4>Calculations, and the one that was wrong</h4>
+          <p>
+            Centre of mass was placed 4.36&nbsp;inches from the rear wheel contact point,
+            from d = x<sub>cm</sub>cos&nbsp;θ − y<sub>cm</sub>sin&nbsp;θ, and the gearboxes,
+            arm and motors were positioned to put it there. Static tests found how high the
+            claw could be carried before the robot would tip. Wheel torque came out to
+            3.43&nbsp;lb-in at 30°.
+          </p>
+          <p>
+            In competition the robot could not climb the 30° centre ramp — the highest-value
+            obstacle on the field. It was not a balance problem. The torque calculation said
+            two-wheel drive had enough, and the calculation was wrong because it assumed the
+            wheels gripped. On turf they slipped. Late in the build we had also dropped the
+            belts that would have made it pseudo-four-wheel drive, because under time
+            pressure they would not stretch onto the front pulleys.
+          </p>
+
+          <div class="note">
+            <b>Thirty minutes before impound</b>
+            We left the arm raised while driving a ramp, the robot tipped forward, and the
+            weight snapped the ⅛-inch acrylic arm bars. We laser-cut replacements, stripped
+            the arm and rebuilt it in time — and spent the hour we would otherwise have used
+            fixing wheel tension. ¼-inch acrylic would likely have survived it, and that one
+            material choice probably cost us the ramp.
+          </div>
+
+          <h4>Result</h4>
+          <p>
+            Seven points in each of the first two rounds. Eleven in the third — two hockey
+            pucks, two ping-pong balls, and a pass under the bridge.
+          </p>
+        </div>
+
+        <dl class="specs" data-reveal>
+          <div><dt>Envelope</dt><dd>10.5 × 10.875 × 7.75 in</dd></div>
+          <div><dt>Mass</dt><dd>5.03 lb</dd></div>
+          <div><dt>Arm reach</dt><dd>6.25 in (3.75 fwd)</dd></div>
+          <div><dt>CM offset</dt><dd>4.36 in from rear</dd></div>
+          <div><dt>Wheel torque</dt><dd>3.43 lb-in @ 30°</dd></div>
+          <div><dt>Best round</dt><dd>11 pts</dd></div>
+        </dl>
+
+        <div class="figs" data-reveal>
+          <figure>
+            <button class="fig" type="button" data-full="assets/es51-robot.jpg" data-cap="The final robot: acrylic base and side plates, aluminium arm tower, belt-driven arm, printed claw with cast silicone inserts.">
+              <img src="assets/es51-robot.jpg" loading="lazy" width="1200" height="900" alt="The completed Wandering Walruses competition robot">
+            </button>
+            <figcaption><b>5.1</b> Final robot</figcaption>
+          </figure>
+          <figure>
+            <button class="fig fig--plot" type="button" data-full="assets/es51-drawing.jpg" data-cap="Assembly drawing, four views, drawn in SolidWorks for impound documentation.">
+              <img src="assets/es51-drawing.jpg" loading="lazy" width="1300" height="952" alt="Four-view SolidWorks assembly drawing of the robot with title block">
+            </button>
+            <figcaption><b>5.2</b> Assembly drawing</figcaption>
+          </figure>
+          <figure>
+            <button class="fig fig--plot" type="button" data-full="assets/es51-claw.jpg" data-cap="Claw assembly: printed frame, 32-tooth acetal gears, servo, and the cast Ecoflex-50 silicone inserts.">
+              <img src="assets/es51-claw.jpg" loading="lazy" width="460" height="376" alt="SolidWorks render of the claw assembly with silicone grip inserts">
+            </button>
+            <figcaption><b>5.3</b> Claw with silicone grips</figcaption>
+          </figure>
+          <figure>
+            <button class="fig" type="button" data-full="assets/es51-drivetrain.jpg" data-cap="Drivetrain during assembly, with the belts that were later removed for lack of clearance.">
+              <img src="assets/es51-drivetrain.jpg" loading="lazy" width="1100" height="825" alt="Robot drivetrain laid out with motors, gearboxes and belts">
+            </button>
+            <figcaption><b>5.4</b> Drivetrain and belts</figcaption>
+          </figure>
+          <figure>
+            <button class="fig" type="button" data-full="assets/es51-baseplates.jpg" data-cap="Roughly a dozen cardboard baseplate iterations, chasing hole positions that out-of-tolerance parts kept moving.">
+              <img src="assets/es51-baseplates.jpg" loading="lazy" width="1100" height="825" alt="Many laser-cut cardboard baseplate iterations laid out on a bench">
+            </button>
+            <figcaption><b>5.5</b> Baseplate iterations</figcaption>
+          </figure>
+          <figure>
+            <button class="fig fig--plot" type="button" data-full="assets/es51-sketch.jpg" data-cap="One of four ideation sketches — the forklift concept, eliminated for exceeding bridge clearance.">
+              <img src="assets/es51-sketch.jpg" loading="lazy" width="900" height="685" alt="Hand sketch of the rejected forklift robot concept">
+            </button>
+            <figcaption><b>5.6</b> Ideation, rejected</figcaption>
+          </figure>
+        </div>
+
+        <div class="sheet__links" data-reveal>
+          <a class="btn" href="docs/ES51-Wandering-Walruses-Report.pdf" target="_blank" rel="noopener"><i aria-hidden="true">↗</i>Full report (PDF)</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ==================================================== CAPABILITIES ==== -->
+<section class="section section--sunk" id="capabilities">
+  <div class="wrap">
+    <div class="shead">
+      <h2 data-reveal>Capabilities</h2>
+      <hr class="rule" data-reveal style="--d:120ms">
+      <p class="mono" data-reveal style="--d:200ms">Sheet 2 of 6</p>
+    </div>
+
+    <div class="caps" data-reveal>
+      <section>
+        <h3>Design &amp; Analysis</h3>
+        <ul>
+          <li>SolidWorks — part, assembly, drawing</li>
+          <li>COMSOL Multiphysics (structural FEA)</li>
+          <li>Mesh convergence studies</li>
+          <li>Statics &amp; mechanics of solids</li>
+          <li>Mechanical vibrations</li>
+          <li>Thermodynamics</li>
+          <li>Tolerance &amp; fit analysis</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Fabrication</h3>
+        <ul>
+          <li>Manual lathe — turned shafts</li>
+          <li>CNC mill — moulds and features</li>
+          <li>Horizontal bandsaw, drill press</li>
+          <li>Laser cutting — acrylic, wood, card</li>
+          <li>FDM 3D printing (PLA)</li>
+          <li>Silicone casting (Ecoflex-50)</li>
+          <li>Through-hole soldering</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Electronics</h3>
+        <ul>
+          <li>Arduino / AVR embedded C++</li>
+          <li>Shift registers &amp; serial protocols</li>
+          <li>Hall effect &amp; gas sensing</li>
+          <li>Addressable LED (WS2812B, FastLED)</li>
+          <li>Power budgeting &amp; current draw</li>
+          <li>Cellular telemetry (SIM7028)</li>
+          <li>Breadboard prototyping &amp; debug</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Manufacturing &amp; Cost</h3>
+        <ul>
+          <li>Bill of materials construction</li>
+          <li>Process routing &amp; step costing</li>
+          <li>Burdened labour (LBM) estimation</li>
+          <li>Design for manufacturing (DFM)</li>
+          <li>Injection moulding — part analysis</li>
+          <li>Sheet metal forming &amp; welding</li>
+          <li>Teardown &amp; reverse engineering</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Software</h3>
+        <ul>
+          <li>Python — analysis &amp; plotting</li>
+          <li>MATLAB</li>
+          <li>C / C++</li>
+          <li>Firebase Realtime Database</li>
+          <li>Git &amp; GitHub</li>
+          <li>LaTeX</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Working Practice</h3>
+        <ul>
+          <li>Prototype-first iteration</li>
+          <li>Technical reporting &amp; drawing sets</li>
+          <li>Design reviews &amp; Pugh matrices</li>
+          <li>Small-team build under deadline</li>
+          <li>Research presentation</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================== COURSEWORK ==== -->
+<section class="section" id="coursework">
+  <div class="wrap">
+    <div class="shead">
+      <h2 data-reveal>Coursework</h2>
+      <hr class="rule" data-reveal style="--d:120ms">
+      <p class="mono" data-reveal style="--d:200ms">Harvard SEAS</p>
+    </div>
+
+    <ul class="courses" data-reveal>
+      <li><code>ES 55</code><span>Design and Manufacturing — reverse engineering, BOM and process costing, DFM</span></li>
+      <li><code>ES 125</code><span>Mechanical Systems — vibration, resonance, Laplace methods, Lagrangian dynamics</span></li>
+      <li><code>ES 120</code><span>Introduction to the Mechanics of Solids — stress, strain, elasticity</span></li>
+      <li><code>ES 181</code><span>Engineering Thermodynamics</span></li>
+      <li><code>ES 51</code><span>Computer-Aided Machine Design — machining, CAD, mechanism design</span></li>
+      <li><code>ES 50</code><span>Introduction to Electrical Engineering — circuits, embedded systems</span></li>
+      <li><code>ES 96</code><span>Engineering Problem Solving and Design Project</span></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ========================================================= CONTACT ==== -->
+<footer class="colophon" id="contact">
+  <div class="wrap">
+    <div class="colophon__grid">
+      <div data-reveal>
+        <p class="mono">Get in touch</p>
+        <h2>Let’s build<br>something</h2>
+        <p style="margin-top:1rem; color:var(--ink-2)">
+          Open to internships and project work in mechanical design, mechatronics,
+          and manufacturing engineering.
+        </p>
+      </div>
+
+      <dl class="titleblock" data-reveal style="--d:120ms; margin-top:0">
+        <div><dt>Email</dt><dd><a class="big" href="mailto:muhammedkhan@college.harvard.edu">muhammedkhan@<wbr>college.harvard.edu</a></dd></div>
+        <div><dt>GitHub</dt><dd><a href="https://github.com/mkhan-harvard" target="_blank" rel="noopener">github.com/<wbr>mkhan-harvard</a></dd></div>
+        <div><dt>Location</dt><dd>Cambridge, MA</dd></div>
+        <div><dt>Status</dt><dd>Seeking Summer 2027</dd></div>
+      </dl>
+    </div>
+
+    <div class="colophon__foot mono">
+      <span>© 2026 Muhammed Khan</span>
+      <span>Set in Antonio, Spectral &amp; IBM Plex Mono</span>
+      <span>Rev. 2026.09 — Sheet 6 of 6</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================================================== LIGHTBOX ==== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged figure">
+  <button class="lightbox__close" type="button" id="lb-close">Close ✕</button>
+  <figure>
+    <img id="lb-img" src="" alt="">
+    <figcaption class="mono" id="lb-cap"></figcaption>
+  </figure>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
